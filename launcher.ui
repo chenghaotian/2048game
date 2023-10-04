@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>320</width>
-    <height>230</height>
+    <height>250</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>320</width>
-    <height>230</height>
+    <height>250</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>320</width>
-    <height>230</height>
+    <height>250</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -29,8 +29,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>120</y>
+      <x>20</x>
+      <y>140</y>
       <width>281</width>
       <height>61</height>
      </rect>
@@ -43,15 +43,15 @@
      </font>
     </property>
     <property name="text">
-     <string>启动</string>
+     <string>2048 启动!</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>120</width>
+      <y>40</y>
+      <width>101</width>
       <height>80</height>
      </rect>
     </property>
@@ -61,7 +61,7 @@
     <widget class="QSpinBox" name="spinBox">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>30</y>
        <width>81</width>
        <height>41</height>
@@ -81,9 +81,9 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>20</y>
-      <width>120</width>
+      <x>120</x>
+      <y>40</y>
+      <width>101</width>
       <height>80</height>
      </rect>
     </property>
@@ -93,7 +93,7 @@
     <widget class="QSpinBox" name="spinBox_2">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>30</y>
        <width>81</width>
        <height>41</height>
@@ -108,6 +108,74 @@
      <property name="value">
       <number>4</number>
      </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Super2048 launcher  Write by D BOY</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>71</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>是否重开</string>
+    </property>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Yes</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>No</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
     </widget>
    </widget>
   </widget>
@@ -125,4 +193,7 @@
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
 </ui>
